@@ -52,3 +52,13 @@ function calc(a, b, callback) {
   console.log(calc(8, 5, modDiv));
   console.log(calc(2, 2, exp));
   
+  
+  const runTask = function () {
+    const app = document.getElementById("app");
+    for (let i = 1; i <= 11111111110; i = i * 10 + 1) {
+      const DIV = document.createElement("div");
+      DIV.innerHTML = i;
+      app.append(DIV);
+    }
+}
+    app.append(DIV.innerHTML);
