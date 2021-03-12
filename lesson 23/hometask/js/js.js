@@ -62,3 +62,22 @@ function calc(a, b, callback) {
     }
 }
     app.append(DIV.innerHTML);
+
+    const celsius = [
+        -3.5,
+        -3,
+        1.8,
+        9.3,
+        15.5,
+        18.5,
+        20.5,
+        19.7,
+        14.2,
+        8.4,
+        1.9,
+        -2.3
+      ];
+      const farenheit = celsius.map(function (item) {
+        return item * 33.8;
+      });
+      console.log("farenheit", farenheit);
