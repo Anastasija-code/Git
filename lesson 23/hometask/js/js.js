@@ -26,3 +26,29 @@ function calc(a, b, callback) {
  console.log(calc(10,5,div));
  console.log(calc(8,5,modDiv));
  console.log(calc(2,2,exp));
+  
+
+ const calc = (a, b, callback) => {
+    return callback(a, b);
+  };
+  const add = (a = 1, b = 2) => {
+    return a + b;
+  };
+  const subtr = (a = 5, b = 4) => {
+    return a - b;
+  };
+  const div = (a = 8, b = 2) => {
+    return a / b;
+  };
+  const modDiv = (a = 15, b = 3) => {
+    return a % b;
+  };
+  const exp = (a = 2, b = 3) => {
+    return a ** b;
+  };
+  console.log(calc(3, 5, add));
+  console.log(calc(4, 1, subtr));
+  console.log(calc(10, 5, div));
+  console.log(calc(8, 5, modDiv));
+  console.log(calc(2, 2, exp));
+  
